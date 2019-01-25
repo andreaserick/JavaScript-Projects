@@ -113,7 +113,9 @@ function fetchData(url) {
 
 // trimiteti request-ul cu unul gresit.
 
+fetchData("https://dog.ceo/api/breeds/listt")
 
+    .catch(error => console.log(error));
 
 
 
@@ -235,13 +237,13 @@ function generateOptions(str) {
 
             ARRAY.forEach(element => {
 
-                let Option = document.createElement('option');
+                let Optiune = document.createElement('option');
 
-                Option.innerText = element;
+                Optiune.innerText = element;
 
-                Option.value = element;
+                Optiune.value = element;
 
-                select.appendChild(Option);
+                select.appendChild(Optiune);
 
             });
 
