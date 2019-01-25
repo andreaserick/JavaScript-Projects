@@ -55,12 +55,10 @@ const image = document.createElement('img');
 
 // PAS 4: la schimbarea optiunii din <select> afiseaza o imagine din rasa selectata
 
-select.addEventListener('change', () => {
-
-    generateImage('https://dog.ceo/api/breed/' + select.value + '/images/random')
-
-})
-
+select.addEventListener('change',imageCaller)
+ function imageCaller(){
+      generateImage('https://dog.ceo/api/breed/' + select.value + '/images/random')
+ }
 
 
 // PAS 5: la click in interiorul <div>-ului afiseaza alta imagine din rasa selectata
